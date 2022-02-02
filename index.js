@@ -63,7 +63,7 @@ fastify.get('/callback', async (request, reply) => {
   }
 })
 
-fastify.listen(8080, err => {
+fastify.listen(process.env.PORT || 3000, err => {
   if (err) {
     fastify.log.error(err)
     process.exit(1)
