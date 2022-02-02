@@ -8,6 +8,9 @@ const tokenUrl = 'https://github.com/login/oauth/access_token'
 
 fastify.get('/', _ => {
   console.log('FASTIFY: "/" Request accepted')
+  return {
+    message: 'Response from server 👌'
+  }
 })
 
 fastify.get('/auth', (_, reply) => reply.redirect(authUrl))
