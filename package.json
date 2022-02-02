@@ -16,7 +16,7 @@
     "url": "https://github.com/irhill/netlify-oauth/issues"
   },
   "homepage": "https://github.com/irhill/netlify-oauth#readme",
-  "devDependencies": {
+  "dependencies": {
     "fastify": "^3.27.0",
     "tiny-json-http": "^7.3.1"
   }
