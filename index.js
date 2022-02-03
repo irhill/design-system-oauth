@@ -23,7 +23,7 @@ fastify.get('/callback', async (request, reply) => {
   }
 
   try {
-    const body = await tiny.post({
+    const { body } = await tiny.post({
       url: tokenUrl,
       data,
       headers: {
