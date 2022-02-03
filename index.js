@@ -63,7 +63,8 @@ fastify.get('/callback', async (request, reply) => {
   }
 })
 
-fastify.listen(process.env.PORT || 3000, err => {
+const port = process.env.PORT || 3000
+fastify.listen(port, '0.0.0.0', err => {
   if (err) {
     fastify.log.error(err)
     process.exit(1)
