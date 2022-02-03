@@ -1,8 +1,8 @@
 const fastify = require('fastify')({ logger: true })
 const tiny = require('tiny-json-http')
 
-const client_id = 'ad369071b4207db2dfb5'
-const client_secret = '150662bd8257ddf0d2d1ffcd230e7e9c18660e62'
+const client_id = process.env.client_id
+const client_secret = process.env.client_secret
 const authUrl = `https://github.com/login/oauth/authorize?client_id=${client_id}&scope=repo,user`
 const tokenUrl = 'https://github.com/login/oauth/access_token'
 
