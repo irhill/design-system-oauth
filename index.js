@@ -56,7 +56,7 @@ fastify.get('/callback', async (request, reply) => {
         })()
       </script>`
     
-    reply.send(script)
+    return reply.send(script)
   } catch (err) {
     console.error(err)
     reply.redirect('/?error=😡')
