@@ -32,10 +32,14 @@ fastify.get('/callback', async (request, reply) => {
       }
     })
 
+    console.log('>>>>> body: ', JSON.stringify(body))
+
     const postMsgContent = {
       token: body.access_token,
       provider: 'github'
     }
+
+    console.log('>>>>> postMsgContent: ', JSON.stringify(postMsgContent))
 
     // This is what talks to the NetlifyCMS page. Using window.postMessage we give it the
     // token details in a format it's expecting
