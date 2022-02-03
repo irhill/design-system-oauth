@@ -1,5 +1,5 @@
 {
-  "name": "netlify-oauth",
+  "name": "design-system-oauth",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/irhill/netlify-oauth.git"
+    "url": "git+https://github.com/irhill/design-system-oauth.git"
   },
   "author": "Ian Hill",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/irhill/netlify-oauth/issues"
+    "url": "https://github.com/irhill/design-system-oauth/issues"
   },
-  "homepage": "https://github.com/irhill/netlify-oauth#readme",
+  "homepage": "https://github.com/irhill/design-system-oauth#readme",
   "dependencies": {
     "express": "^4.17.2",
     "fastify": "^3.27.0",
